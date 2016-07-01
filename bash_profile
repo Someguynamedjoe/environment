@@ -5,8 +5,11 @@ PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 export PATH
 
 function mem {
-	top -l 1 -s 0 | grep PhysMem | awk '{print $6}'
+# Mac OS Version
+#	 top -l 1 -s 0 | grep PhysMem | awk '{print $6}'
+	free -h | grep Mem | awk '{print $3}'
 }
+
 
 function root {
 	df -h / | awk 'FNR ==2 {print $4}'
