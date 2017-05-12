@@ -30,4 +30,4 @@ export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; histor
 export GREP_OPTIONS='--color=auto'
 
 
-alias ms='ping -c 1 google.com | grep "bytes from" | cut -d = -f 4'
+#alias ms='ping -c 1 google.com | grep "bytes from" | cut -d = -f 4'
