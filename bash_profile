@@ -27,3 +27,4 @@ export HISTFILE=~/.bash_long_history
 export HISTCONTROL=ignoredups:erasedups
 shopt -s histappend
 export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
+export GREP_OPTIONS='--color=auto'
