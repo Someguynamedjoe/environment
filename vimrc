@@ -14,6 +14,7 @@ if has('mouse')
 endif
 if &t_Co > 2 || has("gui_running")
   syntax on
+  colorscheme desert
   set hlsearch
 endif
 
